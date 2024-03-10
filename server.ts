@@ -1,7 +1,7 @@
 // ToDo
 // [x] - get top 3 post in past 24hrs from r/animemes
 // [x] - check if post is posted
-// [x] - if not poseted then post @taewonsu
+// [x] - if not poseted then post
 // [x] - add post to posted_list
 
 // https://www.reddit.com/r/Animemes/top.json?limit=3 - {url, id, title, author}
@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.json({
     autopost_memes: req.protocol + "://" + req.get("host") + `/reddit2insta`,
-    github: "https://github.com/LucidMach/taewonsu",
+    github: "https://github.com/",
     insta_url: `https://www.instagram.com/${process.env.IG_USERNAME}/`,
   });
 });

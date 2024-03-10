@@ -47,7 +47,7 @@ export const reddit2insta = async (
 
     // check if meme is image and new
     if (animeme.data.url.split(".")[0].split("://")[1] === "v") {
-      console.log(":( video desu");
+      console.log(":( video");
       return null;
     }
     if (posted_animemes[animeme.data.id]) {
