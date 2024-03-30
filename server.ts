@@ -2,7 +2,7 @@
 // [x] - get top 3 post in past 24hrs from r/animemes
 // [x] - check if post is posted
 // [x] - if not poseted then post
-// [x] - add post to posted_list
+// [x] - add post to posted_list process.env.PORT ||
 
 // https://www.reddit.com/r/Animemes/top.json?limit=3 - {url, id, title, author}
 import { config } from "dotenv";
@@ -13,7 +13,7 @@ import { reddit2insta } from "./reddit2insta";
 config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 // For parsing application/json
 app.use(express.json());
