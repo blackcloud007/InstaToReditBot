@@ -14,7 +14,7 @@ const express_1 = __importDefault(require("express"));
 const reddit2insta_1 = require("./reddit2insta");
 (0, dotenv_1.config)();
 const app = (0, express_1.default)();
-const port = process.env.PORT || 5000;
+const port = 3000;
 // For parsing application/json
 app.use(express_1.default.json());
 // For parsing application/x-www-form-urlencoded
